@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Home</title>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Varela+Round&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+ 
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+ 
+<style>
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: 'Source Sans Pro',sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+  
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a:link{
+	color:white;
+	}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header a.active {
+  background-color: black;
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  
+  .header-right {
+    float: none;
+  }
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("ped3.png");
+  filter: blur(8px);
+  -webkit-filter: blur(4px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  z-index: 4;
+  width: 80%;
+  padding: 40px;
+  text-align: center;
+}
+.footer {
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+}
+
+.footer a {
+	
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  bg color:black;
+}
+.footer right{
+  float: right;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: black;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Source Sans Pro', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #white;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color: red;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  white;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  white;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  white;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  red;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+	
+</style>
+</head>
+<body>
+
+<div class="header" style="font-family: 'Source Sans Pro',sans-serif;">
+   <a href="https://www.google.com/maps/place/Pondy+Bazaar,+Parthasarathi+Puram,+T.+Nagar,+Chennai,+Tamil+Nadu+600017/@13.0400132,80.2338103,17z/data=!3m1!4b1!4m5!3m4!1s0x3a526655cd52d36b:0xd50c3122ba1c4313!8m2!3d13.0398891!4d80.2368745" class="logo" target="_blank">Pondy Bazaar</a>
+  <div class="header-right">
+    <a  href="plaza.html" class="logo">Pedestrian's Plaza</a>
+    <a  href="shops.html" class="logo">Shops</a>
+   <a  href="reviews.html" class="logo">Reviews</a>
+    
+  </div>
+</div>
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h2>PONDY BAZAAR </h2>
+  <h1 style="font-size:50px"> "A Whole new shopping experience at Chennai's first Pedestrian Mall" </h1>
+  <p>Come Explore Here</p>
+</div>
+
+<video autoplay muted loop id="myVideo">
+  <source src="review.mp4" type="video/mp4">
+ your browser doesn't support this video
+</video>
+<!--<div class="footer">
+<h4><font color="white">For more details click the link below <font></h4>
+<p><font color="white"><a href="https://www.itdp.in/>itdp.in">www.itdp.in</font></a></p><br />
+Created by Arwind Adithyan<br />
+<i class="fas fa-envelope"  style="font-size:15px;color:white;">  techiedark07@gmail.com</i><br />
+<i class="fas fa-phone-alt" style="font-size:15px;color:white;">  +916381142360  </i><br />
+<i class="fab fa-instagram" style="font-size:15px;color:white;"> Follow me @__arwindaadhi__07</i>
+</div>//-->
+<footer class="footer-distributed">
+ 
+			<div class="footer-left">
+       
+				<h3> <span><b> Pondy Bazzar</b></span></h3>
+ 
+				<p class="footer-links">
+					<a href="sam.html">Home</a>
+					<br />
+					<a href="plaza.html">Pedestrians Plaza</a>
+					<br />
+					<a href="reviews.html">Reviews</a>
+					<br />
+					<a href="shops.html">Shops</a>
+				</p>
+ 
+				
+			</div>
+ 
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span><b>Pondy BazaarParthasarathi Puram,</b></span> T. Nagar,
+						 Chennai, Tamil Nadu 60001</span></p>
+						
+				</div>
+ 
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 6381142360</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:techiedark07@gmail.com">techiedark07@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>Pondy Bazzar</span>
+					<b>Pondy Bazaar, officially called Soundarapandianar Angadi, is a market located in T. Nagar, Chennai. It is one of the principal shopping districts of Chennai.</b></p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/profile.php?id=100010713124405"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/__arwindaadhi__06/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCzS-jchiH0Urikjko3xrKoQ"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+  </body>
+</html>
